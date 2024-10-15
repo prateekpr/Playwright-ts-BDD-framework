@@ -1,0 +1,16 @@
+{
+    "default":{
+        "timeout": 10000,
+        "dryRun":false,
+        "formatOptions":{
+            "snippetInterface":"async-await"
+        }, 
+         "paths":["tests/test/features/*.feature"],
+        "require":["tests/test/steps/*.ts"],
+        "requireModule":["ts-node/register"],
+        "format":[]
+            
+    }
+  
+
+}
