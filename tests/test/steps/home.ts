@@ -10,7 +10,7 @@ let browsercontext:BrowserContext
 let page:Page
 let login: Login;
 dotenv.config()
-BeforeAll (async function() {
+BeforeAll ({ timeout: 5000},async function() {
     browser=await chromium.launch({headless:false,channel:'chrome'})
     browsercontext=await browser.newContext()
     page=await browsercontext.newPage()
